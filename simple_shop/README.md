@@ -19,7 +19,7 @@ Dieses Repository enthält einen einfachen Online-Shop, der mit **React** und **
    ```bash
    pnpm install
    ```
-   > Alternativ: `npm install` oder `yarn install` (je nach Paketmanager)
+   > Alternativ: `npm install` (je nach Paketmanager)
 
 3. **Entwicklungsserver starten**
    ```bash
