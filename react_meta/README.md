@@ -2,7 +2,7 @@
 
 ## 📸 Showcase
 
-![React Meta Showcase](/public/react_meta_fix.png)
+![React Meta Showcase](public/react_meta_fix.png)
 
 ## 🛠️ Installation
 
