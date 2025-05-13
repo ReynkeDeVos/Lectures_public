@@ -7,28 +7,6 @@ Dieses Repository enthält einen einfachen Online-Shop, der mit **React** und **
 
 ---
 
-## 🚀 Schnellstart
-
-1. **Repository klonen**
-   ```bash
-   git clone <REPO-URL>
-   cd simple_shop
-   ```
-
-2. **Abhängigkeiten installieren**
-   ```bash
-   pnpm install
-   ```
-   > Alternativ: `npm install` (je nach Paketmanager)
-
-3. **Entwicklungsserver starten**
-   ```bash
-   pnpm dev
-   ```
-   Die App ist dann meist unter [http://localhost:5173](http://localhost:5173) erreichbar.
-
----
-
 ## 🧑‍💻 Projektstruktur
 
 - **src/App.jsx**  
@@ -74,14 +52,6 @@ Dieses Repository enthält einen einfachen Online-Shop, der mit **React** und **
 - Verändere das Styling (z.B. mit Tailwind oder DaisyUI).
 - Füge neue Features hinzu (z.B. Produktdetails, Mengenänderung im Warenkorb).
 - Schau dir die Kommentare im Code an – sie helfen beim Verständnis!
-
----
-
-## 🛠️ Nützliche Befehle
-
-- `pnpm dev` – Entwicklungsserver starten
-- `pnpm build` – Produktions-Build erstellen
-- `pnpm lint` – Linting (Code-Qualität prüfen)
 
 ---
 
