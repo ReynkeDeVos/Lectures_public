@@ -107,13 +107,6 @@ This guide provides an overview of my Visual Studio Code extensions and settings
 - **GitHub Copilot:** AI pair programmer.
   - **Important Advice for Learners:** It's highly recommended to **disable Copilot completely** while actively learning, as it can prevent you from problem-solving and understanding concepts deeply. You can enable it later once you have a solid foundation of programming skills.
 
-## Getting Started Checklist
-
-1. ✅ Install VS Code
-2. ✅ Install Basic/Essential extensions first
-3. ✅ Add Frontend or Backend extensions as needed for your current module
-4. ✅ Save your settings using Settings Sync (optional)
-
 ## Common Issues and Solutions
 
 - **ESLint with Tailwind**: If you see "Unknown at rule @tailwind" errors:
