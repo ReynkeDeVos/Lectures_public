@@ -1,4 +1,4 @@
-# VSCode Settings & Setup Guide for Students
+# VSCode Settings & Setup Guide
 
 This guide provides an overview of my Visual Studio Code extensions and settings.
 
