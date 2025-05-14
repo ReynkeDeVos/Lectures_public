@@ -66,7 +66,7 @@ This guide provides an overview of my Visual Studio Code extensions and settings
   - (Toggle folding with `CTRL + ALT + A`)
 - **Import Cost:** Displays the size of imported packages.
   - Setting to display it more in the background: `"importCost.fontStyle": "italic"`
-- **npm Intellisense:** Autocompletes npm modules in import statements.
+- **npm Intellisense:** Autocompletes npm modules in import statements. (Not sure if still necessary)
 
 ### Backend Development Extensions
 
