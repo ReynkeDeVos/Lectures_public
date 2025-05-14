@@ -7,7 +7,6 @@ This guide provides an overview of my Visual Studio Code extensions and settings
 ### Basic/Essential Extensions
 
 - **Live Server:** Launches a local development server with live reload.
-  - Setting: `"liveServer.settings.donotShowInfoMsg": true` (Hides information pop-ups)
 - **ESLint:** Integrates JavaScript and TypeScript linting.
 - **Prettier - Code formatter:** An opinionated code formatter.
   - Setting: `"editor.defaultFormatter": "esbenp.prettier-vscode"`
