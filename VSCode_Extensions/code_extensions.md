@@ -11,7 +11,7 @@ This guide provides an overview of my Visual Studio Code extensions and settings
 - **Prettier - Code formatter:** An opinionated code formatter.
   - Setting: `"editor.defaultFormatter": "esbenp.prettier-vscode"`
   - Setting: `"editor.formatOnSave": true` (Formats code when you save)
-- **Path Intellisense:** Autocompletes filenames and paths.
+- **Path Intellisense:** Autocompletes filenames and paths. (Not sure if still necessary with current VSCode)
 - **Auto Rename Tag:** Automatically renames paired HTML/XML tags.
   - **Alternative Setting:** `"editor.linkedEditing": true` (Built-in feature that renames HTML tag pairs with a single edit)
   - Note: Linked editing is currently supported in HTML, XML, and JSX files. You may want to keep the extension for other file types.
