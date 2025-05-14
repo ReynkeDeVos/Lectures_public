@@ -15,7 +15,6 @@ This guide provides an overview of my Visual Studio Code extensions and settings
 - **Auto Rename Tag:** Automatically renames paired HTML/XML tags.
   - **Alternative Setting:** `"editor.linkedEditing": true` (Built-in feature that renames HTML tag pairs with a single edit)
   - Note: Linked editing is currently supported in HTML, XML, and JSX files. You may want to keep the extension for other file types.
-- **Material Icon Theme:** Provides better icons for files and folders.
 - **Better Comments Next:** Improves comment readability with different annotation types.
 - **Error Lens:** Enhances the display of errors and warnings.
 
