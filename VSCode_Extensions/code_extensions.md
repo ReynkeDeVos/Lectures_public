@@ -112,7 +112,7 @@ This guide provides an overview of my Visual Studio Code extensions and settings
 - **ESLint with Tailwind**: If you see "Unknown at rule @tailwind" errors:
 
   - Ensure CSS files are associated with Tailwind CSS (see settings above)
-  - Or add to your `.eslintrc`:
+  - Or add locally to your `.eslintrc` per project:
 
   ```json
   {
