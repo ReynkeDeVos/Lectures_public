@@ -102,27 +102,6 @@ This guide provides an overview of my Visual Studio Code extensions and settings
   }
   ```
 
-### Import Management
-
-- **Auto Import Settings:**
-
-  ```json
-  {
-    "javascript.suggest.autoImports": true,
-    "typescript.suggest.autoImports": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always"
-  }
-  ```
-
-- **Organize Imports on Save:**
-
-  ```json
-  "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-  }
-  ```
-
 ## Extensions to Be Cautious With (For Learning)
 
 - **GitHub Copilot:** AI pair programmer.
