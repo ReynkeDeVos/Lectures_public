@@ -70,8 +70,8 @@ This guide provides an overview of my Visual Studio Code extensions and settings
 
 ### Backend Development Extensions
 
-- **REST Client:** Send HTTP requests and view responses within VS Code.
-- **SonarLint:** Helps detect and fix quality issues in your code. Eats up your RAM. Only install, if more than 16 GB of RAM.
+- **REST Client:** Send HTTP requests and view responses within VS Code. (More controll and power with an external application like Insomnia)
+- **SonarLint:** Helps detect and fix quality issues in your code. Eats up your RAM. Only install, if more than 16 GB of RAM. Maybe there are better options out there
 - **DotENV:** Support for `.env` file syntax.
 
 ### Post-Bootcamp / TypeScript Extensions
