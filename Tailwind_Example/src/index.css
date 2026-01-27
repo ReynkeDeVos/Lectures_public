@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* ============================================
+   DESIGN SYSTEM - Tailwind CSS
+   ============================================
+   This file defines your global design tokens:
+   - Color palette (primary, secondary, accent, etc.)
+   - Font families (headings, body text)
+   - Typography scale
+   - Theme switching (light/dark mode)
+   ============================================ */
+
+@theme {
+  /* --------------------------------------------
+     COLOR PALETTE
+     Define your brand colors here.
+     Usage: bg-primary, text-secondary-dark, etc.
+     -------------------------------------------- */
+
+  /* Primary - Main brand color */
+  --color-primary: oklch(55% 0.25 260);
+  --color-primary-light: oklch(70% 0.2 260);
+  --color-primary-dark: oklch(40% 0.25 260);
+
+  /* Secondary - Supporting brand color */
+  --color-secondary: oklch(65% 0.2 180);
+  --color-secondary-light: oklch(80% 0.15 180);
+  --color-secondary-dark: oklch(45% 0.2 180);
+
+  /* Accent - For highlights and CTAs */
+  --color-accent: oklch(75% 0.2 80);
+  --color-accent-light: oklch(85% 0.15 80);
+  --color-accent-dark: oklch(60% 0.2 80);
+
+  /* Neutral - For text and backgrounds */
+  --color-neutral-50: oklch(98% 0 0);
+  --color-neutral-100: oklch(95% 0 0);
+  --color-neutral-200: oklch(90% 0 0);
+  --color-neutral-300: oklch(80% 0 0);
+  --color-neutral-400: oklch(65% 0 0);
+  --color-neutral-500: oklch(50% 0 0);
+  --color-neutral-600: oklch(40% 0 0);
+  --color-neutral-700: oklch(30% 0 0);
+  --color-neutral-800: oklch(20% 0 0);
+  --color-neutral-900: oklch(12% 0 0);
+
+  /* Semantic colors */
+  --color-success: oklch(65% 0.2 145);
+  --color-warning: oklch(75% 0.18 85);
+  --color-error: oklch(55% 0.25 25);
+
+  /* --------------------------------------------
+     FONT FAMILIES
+     Define your typography here.
+     Usage: font-heading, font-body
+     -------------------------------------------- */
+
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* --------------------------------------------
+     FONT SIZES (for reference)
+     Tailwind provides text-xs through text-9xl
+     You can customize them here if needed:
+     --font-size-*: [size] [line-height];
+     -------------------------------------------- */
+}
+
+/* ============================================
+   THEME VARIABLES (CSS Custom Properties)
+   ============================================
+   These semantic variables change based on theme.
+   Use these for backgrounds, text, borders, etc.
+   The actual color palette above stays constant.
+   ============================================ */
+
+:root {
+  /* Background colors */
+  --bg-page: var(--color-neutral-50);
+  --bg-surface: white;
+  --bg-muted: var(--color-neutral-100);
+  --bg-code: var(--color-neutral-200);
+
+  /* Text colors */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-800);
+  --text-muted: var(--color-neutral-600);
+  --text-subtle: var(--color-neutral-500);
+  --text-inverted: white;
+
+  /* Border colors */
+  --border-default: var(--color-neutral-200);
+  --border-strong: var(--color-neutral-300);
+
+  /* Shadow (used for cards) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* --------------------------------------------
+   DARK THEME
+   Applied when .dark class is on <html>
+   -------------------------------------------- */
+
+.dark {
+  /* Background colors - inverted neutrals */
+  --bg-page: var(--color-neutral-900);
+  --bg-surface: var(--color-neutral-800);
+  --bg-muted: var(--color-neutral-700);
+  --bg-code: var(--color-neutral-700);
+
+  /* Text colors - inverted */
+  --text-primary: var(--color-neutral-50);
+  --text-secondary: var(--color-neutral-100);
+  --text-muted: var(--color-neutral-400);
+  --text-subtle: var(--color-neutral-500);
+  --text-inverted: var(--color-neutral-900);
+
+  /* Border colors - darker */
+  --border-default: var(--color-neutral-700);
+  --border-strong: var(--color-neutral-600);
+
+  /* Shadow - stronger for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+}
+
+/* ============================================
+   BASE LAYER - Default Element Styles
+   ============================================
+   Apply consistent typography to HTML elements.
+   You can modify these defaults.
+   ============================================ */
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    /* Use semantic theme variables instead of fixed colors */
+    color: var(--text-secondary);
+    background-color: var(--bg-page);
+    /* Smooth transition when switching themes */
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  h1 {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 2rem; /* 32px */
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+  }
+
+  /* Transition for elements that change color on theme switch */
+  *,
+  *::before,
+  *::after {
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+}
