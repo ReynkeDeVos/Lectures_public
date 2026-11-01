@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    # add new project folders here so their security PRs get grouped too
+    directories:
+      - /Global_styles_tailwind_example
+      - /PhotoGallery_simple
+      - /react_meta
+      - /simple_shop
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 0 # no routine version bumps, security updates only
+    groups:
+      security:
+        applies-to: security-updates
+        patterns: ["*"]
